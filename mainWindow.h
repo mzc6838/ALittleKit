@@ -8,7 +8,7 @@
 #include <qstring.h>
 #include <qstack.h>
 #include <qprogressBar.h>
-#include "bigInt.h"
+#include "Resources\bigInt.h"
 #include <qlabel.h>
 #include <qdialog.h>
 #include "Resources\BigIntegerForRsa.h"
@@ -18,8 +18,9 @@
 #include <qfiledialog.h>
 #include <Windows.h>
 #include <qmessagebox.h>
+#include <qdebug.h>
 
-#pragma comment(lib, "BigInt.lib")
+#pragma comment(lib, "Resources/BigInt.lib")
 #pragma comment(lib, "Resources/RSA.lib")
 
 //用于计算器的中序后序表达式的构建
@@ -131,14 +132,16 @@ public:
 private:
 	QGridLayout * RSALay;
 
-	QPushButton *init;       //初始化按钮，用于构建公钥和密钥
-	QPushButton *encrypt;    //加密按钮
-	QPushButton *decrypt;    //解密按钮
-	QPushButton *selectFile; //选择要加密的文件
+	QPushButton *init;           //初始化按钮，用于构建公钥和密钥
+	QPushButton *encrypt;        //加密按钮
+	QPushButton *decrypt;        //解密按钮
+	QPushButton *selectFile;     //选择要加密的文件
+	QPushButton *getKeyFromFile; //从文件加载key
 
-	QComboBox *keyLength; //密钥长度的下拉选项框
+	QComboBox *QCB_keyLength; //密钥长度的下拉选项框
 
 	QLabel *information;  //说明文字
+	QLabel *informationMain;
 
 	QString QS_filePath = "";
 	QString QS_fileName = "";
@@ -146,6 +149,8 @@ private:
 	QLineEdit *fileName;
 
 	QProgressBar *crypting;
+
+	int i_keyLength;
 
 	unsigned int _seed;
 
@@ -155,6 +160,7 @@ private slots:
 	void encryptClicked();
 	void decryptClicked();
 	void selectFileClicked();
+	void getKeyFromFileClicked();
 
 };
 

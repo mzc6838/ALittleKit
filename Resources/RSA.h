@@ -9,7 +9,7 @@
 class RSA {
 public:
 	RSA() {}
-	RSA(const unsigned len) { init(len, *this, 12345); }    // 利用len初始化对象
+	RSA(const unsigned len) { init(len, *this, 0); }    // 利用len初始化对象
 	~RSA() {}
 
 	void static init(const unsigned, RSA&, unsigned int);// 初始化,产生公私钥对
@@ -17,9 +17,11 @@ public:
 	BigIntegerForRsa encryptByPublic(const BigIntegerForRsa &);    // 公钥加密
 	BigIntegerForRsa decryptByPrivate(const BigIntegerForRsa &);   // 私钥解密
 
-	// 以下主要用于数字签名
-	BigIntegerForRsa encryptByPrivate(const BigIntegerForRsa &);// 私钥加密
-	BigIntegerForRsa decryptByPublic(const BigIntegerForRsa &);    // 公钥解密
+	void setd(const BigIntegerForRsa &);  //外部设置私钥d
+	void setn(const BigIntegerForRsa &);  //外部设置公钥n
+	void sete(const BigIntegerForRsa &);  //外不设置公钥e
+	BigIntegerForRsa getd();              //获得私钥
+
 protected:
 	friend std::ostream & operator << (std::ostream &, const RSA &);// 输出相关数据
 private:

@@ -574,16 +574,23 @@ QString Calculator::solveBehind(vector<NumOrSymbol> input)
 			}
 			case '/':
 			{
-				t_res = t_numB / t_numA;
-				if (t_res.isNegative && t_res != BIG_ZERO)
+				if (t_numA == t_numB)
 				{
-					t_res = t_res - BIG_ONE;
+					number.push(BIG_ONE);
 				}
-				else if (!t_res.isNegative && t_res != BIG_ZERO)
+				else
 				{
-					t_res = t_res + BIG_ONE;
+					t_res = t_numB / t_numA;
+					if (t_res.isNegative && t_res != BIG_ZERO)
+					{
+						t_res = t_res - BIG_ONE;
+					}
+					else if (!t_res.isNegative && t_res != BIG_ZERO)
+					{
+						t_res = t_res + BIG_ONE;
+					}
+					number.push(t_res);
 				}
-				number.push(t_res);
 				break;
 			}
 			}

@@ -9,7 +9,7 @@ class BigIntegerForRsa {
 public:
 	typedef long long long_t;
 	typedef unsigned base_t;
-	BigIntegerForRsa() : is_negative(false) { data.push_back(0); }// 默认为0
+	BigIntegerForRsa() : is_negative(false) { data.push_back(0); } // 默认为0
 	BigIntegerForRsa(const BigIntegerForRsa &);    // 利用给定的大整数初始化
 	BigIntegerForRsa(const std::string &);// 利用给定的十六进制字符串初始化
 	BigIntegerForRsa(const long_t &);        // 利用给定的long_t类型数据初始化
@@ -93,7 +93,7 @@ private:
 		bool at(size_t);    // 返回第i位二进制是否为1
 	private:
 		std::vector<base_t> bit_vector;    // 二进制数据存储,每一个元素对应32位二进制
-		size_t length;    //二进制的总位数
+		size_t length;    // 二进制的总位数
 	};
 	friend class RSA;    // RSA为其友元类
 };
