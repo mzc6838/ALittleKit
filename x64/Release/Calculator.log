@@ -1,0 +1,17 @@
+﻿  BigInt.lib(bigInt.obj) : 找到 MSIL .netmodule 或使用 /GL 编译的模块；正在使用 /LTCG 重新启动链接；将 /LTCG 添加到链接命令行以改进链接器性能
+CalculatorLayer.obj : error LNK2001: 无法解析的外部符号 "public: virtual struct QMetaObject const * __cdecl Calculator::metaObject(void)const " (?metaObject@Calculator@@UEBAPEBUQMetaObject@@XZ)
+CalculatorLayer.obj : error LNK2001: 无法解析的外部符号 "public: virtual void * __cdecl Calculator::qt_metacast(char const *)" (?qt_metacast@Calculator@@UEAAPEAXPEBD@Z)
+CalculatorLayer.obj : error LNK2001: 无法解析的外部符号 "public: virtual int __cdecl Calculator::qt_metacall(enum QMetaObject::Call,int,void * *)" (?qt_metacall@Calculator@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z)
+GetMouse.obj : error LNK2001: 无法解析的外部符号 "public: virtual struct QMetaObject const * __cdecl GetMouse::metaObject(void)const " (?metaObject@GetMouse@@UEBAPEBUQMetaObject@@XZ)
+GetMouse.obj : error LNK2001: 无法解析的外部符号 "public: virtual void * __cdecl GetMouse::qt_metacast(char const *)" (?qt_metacast@GetMouse@@UEAAPEAXPEBD@Z)
+GetMouse.obj : error LNK2001: 无法解析的外部符号 "public: virtual int __cdecl GetMouse::qt_metacall(enum QMetaObject::Call,int,void * *)" (?qt_metacall@GetMouse@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z)
+GetMouse.obj : error LNK2001: 无法解析的外部符号 "public: static struct QMetaObject const GetMouse::staticMetaObject" (?staticMetaObject@GetMouse@@2UQMetaObject@@B)
+mainWindow.obj : error LNK2001: 无法解析的外部符号 "public: virtual struct QMetaObject const * __cdecl mainTab::metaObject(void)const " (?metaObject@mainTab@@UEBAPEBUQMetaObject@@XZ)
+mainWindow.obj : error LNK2001: 无法解析的外部符号 "public: virtual void * __cdecl mainTab::qt_metacast(char const *)" (?qt_metacast@mainTab@@UEAAPEAXPEBD@Z)
+mainWindow.obj : error LNK2001: 无法解析的外部符号 "public: virtual int __cdecl mainTab::qt_metacall(enum QMetaObject::Call,int,void * *)" (?qt_metacall@mainTab@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z)
+mainWindow.obj : error LNK2001: 无法解析的外部符号 "public: static struct QMetaObject const mainTab::staticMetaObject" (?staticMetaObject@mainTab@@2UQMetaObject@@B)
+RSALayer.obj : error LNK2001: 无法解析的外部符号 "public: class BigIntegerForRsa __cdecl RSA::getd(void)" (?getd@RSA@@QEAA?AVBigIntegerForRsa@@XZ)
+RSALayer.obj : error LNK2001: 无法解析的外部符号 "public: virtual struct QMetaObject const * __cdecl RSATab::metaObject(void)const " (?metaObject@RSATab@@UEBAPEBUQMetaObject@@XZ)
+RSALayer.obj : error LNK2001: 无法解析的外部符号 "public: virtual void * __cdecl RSATab::qt_metacast(char const *)" (?qt_metacast@RSATab@@UEAAPEAXPEBD@Z)
+RSALayer.obj : error LNK2001: 无法解析的外部符号 "public: virtual int __cdecl RSATab::qt_metacall(enum QMetaObject::Call,int,void * *)" (?qt_metacall@RSATab@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z)
+C:\Users\6838\Source\Repos\Calculator\x64\Release\\ALittleKit.exe : fatal error LNK1120: 15 个无法解析的外部命令

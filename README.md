@@ -2,4 +2,4 @@
 
 ### In this kit, we offer
 * A calculator
-* A RSA encrypt and decrypt kit
+* A RSA encrypt and decrypt kit(nax length:256)

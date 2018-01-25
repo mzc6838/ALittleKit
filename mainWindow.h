@@ -114,8 +114,9 @@ private:
 	void ACClicked();
 	void CEClicked();
 
-	bool createBehind(QString, std::vector<NumOrSymbol>&);//创建后序表达式
-	QString solveBehind(std::vector<NumOrSymbol>);//计算后序表达式并返回结果
+	bool createBehind(QString, std::vector<NumOrSymbol>&); // 创建后序表达式
+	
+	QString solveBehind(std::vector<NumOrSymbol>);         // 计算后序表达式并返回结果
 
 
 };
